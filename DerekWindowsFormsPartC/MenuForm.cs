@@ -15,11 +15,14 @@ namespace WindowsFormsPartC
         {
             if(animationRadioButton.Checked)
             {
+                // Tasks 5.1 and 5.2
+
                 AnimationForm form = new AnimationForm();
                 form.Show();
             }
             else if(flyMeRadioButton.Checked)
             {
+                // Tasks 5.3, 5.4 and 5.5
                 FlyMeForm form = new FlyMeForm();
                 form.Show();
             }
