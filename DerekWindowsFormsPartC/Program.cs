@@ -18,8 +18,7 @@ namespace WindowsFormsPartC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            //Application.Run(new AnimationForm());
-            Application.Run(new FlyMeForm());
+            Application.Run(new MenuForm());
         }
     }
 }
