@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -15,6 +16,13 @@ namespace WindowsFormsPartC.Unit6
 
     }
 
+    /// <summary>
+    /// This form demonstrates the drawing of simple geometric shapes
+    /// including rectangles, ellipses, polygons and lines.
+    /// 
+    /// Unit 6: Tasks 6.1 to 6.5
+    /// Derek Peacock
+    /// </summary>
     public partial class GraphicsForm : Form
     {
         public const int BYTE = 256;
@@ -32,6 +40,11 @@ namespace WindowsFormsPartC.Unit6
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This is the method that is called every time the screen is
+        /// refreshed.  e contains the Graphics object required for
+        /// any drawing operation
+        /// </summary>
         private void DrawGraphics(object sender, PaintEventArgs e)
         {
             if (radioButton1.Checked)
@@ -43,11 +56,11 @@ namespace WindowsFormsPartC.Unit6
             {
                 drawHexagon(e.Graphics);             // Task 6.3 
             }
-            else if(radioButton3.Checked)
+            else if(radioButton3.Checked)            // Task 6.4
             {
                 drawShape(e.Graphics);
             }
-            else if (radioButton4.Checked)
+            else if (radioButton4.Checked)           // Task 6.5
             {
                 drawCircles(e.Graphics);
             }
