@@ -30,7 +30,7 @@ namespace WindowsFormsPartC
             else if (graphicsRadioButton.Checked)
             {
                 // Tasks 6.1 to 6.6
-                GraphicsForm form = new GraphicsForm();
+                GraphicsForm2 form = new GraphicsForm2();
                 form.Show();
             }
         }
@@ -38,6 +38,11 @@ namespace WindowsFormsPartC
         private void quitForm(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void graphicsRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,6 +90,10 @@ namespace WindowsFormsPartC.Unit6
             }
         }
 
+        /// <summary>
+        /// This is the Form Paint event handler
+        /// </summary>
+        /// <param name="g"></param>
         public void drawShape(Graphics g)
         {
             Color color = getRandomColor();
@@ -217,6 +221,7 @@ namespace WindowsFormsPartC.Unit6
 
             return Color.FromArgb(r, g, b);
         }
+
 
         private Point getRandomPoint()
         {

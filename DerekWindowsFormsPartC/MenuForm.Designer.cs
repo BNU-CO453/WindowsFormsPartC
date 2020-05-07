@@ -99,6 +99,7 @@
             this.graphicsRadioButton.TabStop = true;
             this.graphicsRadioButton.Text = "Unit 6 Graphics";
             this.graphicsRadioButton.UseVisualStyleBackColor = true;
+            this.graphicsRadioButton.CheckedChanged += new System.EventHandler(this.graphicsRadioButton_CheckedChanged);
             // 
             // MenuForm
             // 
