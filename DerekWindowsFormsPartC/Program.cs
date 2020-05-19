@@ -19,7 +19,7 @@ namespace WindowsFormsPartC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            Application.Run(new SketchForm());
+            Application.Run(new MenuForm());
         }
     }
 }

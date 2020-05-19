@@ -76,6 +76,7 @@
             // 
             // copterPictureBox
             // 
+            this.copterPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.copterPictureBox.Location = new System.Drawing.Point(192, 59);
             this.copterPictureBox.Name = "copterPictureBox";
             this.copterPictureBox.Size = new System.Drawing.Size(100, 105);
@@ -119,6 +120,7 @@
             0,
             0,
             0});
+            this.speedNumericUpDown.ValueChanged += new System.EventHandler(this.changeSpeed);
             // 
             // label1
             // 
@@ -133,12 +135,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DerekWindowsFormsPartC.Properties.Resources.City1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(836, 546);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.speedNumericUpDown);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.copterPictureBox);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FlyMeForm";
